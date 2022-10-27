@@ -31,7 +31,7 @@ provider "aws" {
 
 For more information read [AssumeRole](https://developer.hashicorp.com/terraform/tutorials/aws/aws-assumerole#review-ec2-instance-configuration)
 
-For Naming and Tagging Standards / Common Tags I used ``` locals.tf ``` 
+* For Naming and Tagging Standards / Common Tags I used ``` locals.tf ``` 
 
 # Locals in Terraform
 Terraform local values (or "locals") assign a name to an expression or value. 
