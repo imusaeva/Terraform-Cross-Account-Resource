@@ -1,5 +1,5 @@
 # Terraform-Cross-Account-Resource
-This repository is used for creating resources across multiple AWS Accounts
+This repository is used for creating resources across multiple AWS Accounts. 
 We creating SQS
 ![download](https://user-images.githubusercontent.com/85028974/197710253-e69c602c-1706-4360-bc43-705aa113f854.png)
 
@@ -24,11 +24,16 @@ Process messages at high scale while maintaining the message order, allowing you
 provider "aws" {
     region = "us-east-1"
     assume_role {
-        role_arn = "arn:aws:iam::123456789:role"
+        role_arn = "arn:aws:iam::123456789:role" # this is an axemple arn role
     }
 }
 ```
 
 For more information read [AssumeRole](https://developer.hashicorp.com/terraform/tutorials/aws/aws-assumerole#review-ec2-instance-configuration)
 
+For Naming and Tagging Standards / Common Tags I used ``` locals.tf ``` 
 
+# Locals in Terraform
+Terraform local values (or "locals") assign a name to an expression or value. 
+Using locals simplifies your Terraform configuration – since you can reference the local multiple times, you reduce duplication in your code.
+Read more [Terraform Configuration with Locals](https://developer.hashicorp.com/terraform/tutorials/configuration-language/locals?in=terraform%2Fconfiguration-language)
